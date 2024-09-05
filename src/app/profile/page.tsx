@@ -26,7 +26,7 @@ export default function Page() {
                     <Link
                         href={"/"}
                     >
-                        <IoClose className="text-white font-medium ml-8 text-xl" />
+                        <IoClose className="text-white font-medium ml-8 text-xl cursor-pointer" />
                     </Link>
                 </div>
 

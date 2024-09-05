@@ -2,7 +2,10 @@ import { PiCoinsDuotone } from "react-icons/pi";
 import { FaPlus } from "react-icons/fa6";
 import { MdOutlineLogout } from "react-icons/md";
 
-const CreatePost = () => {
+const CreatePost = ({
+    open,
+    setOpen
+}:{open:boolean, setOpen:(arg:boolean) => void}) => {
   return (
     <div
         className='w-full h-[500px] rounded-xl p-4 bg-[#1D2939] flex flex-col justify-between items-between'
@@ -37,6 +40,7 @@ const CreatePost = () => {
             </p>
 
             <button
+                onClick={() => setOpen(!open)}
                 className='flex flex-row justify-center items-center w-full h-[52px] bg-[#475467] py-2 px-4 rounded-xl text-white font-bold text-lg'
             >
                 Create a post <FaPlus className="ml-2" />
@@ -48,7 +52,7 @@ const CreatePost = () => {
             <button
                 className='flex flex-row justify-center items-center w-full h-[52px] bg-transparent py-2 px-4 rounded-xl text-white font-bold text-lg mb-4'
             >
-                <MdOutlineLogout className="mr-2" /> Create a post
+                <MdOutlineLogout className="mr-2" /> Logout
             </button>
 
             <p
