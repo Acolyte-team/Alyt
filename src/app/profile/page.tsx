@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Social from "../components/Social";
 import { IoClose } from "react-icons/io5";
 
-export default function Home() {
+export default function Page() {
   return (
     <div className="w-full">
         <div
@@ -81,7 +81,7 @@ export default function Home() {
 
         </div>
 
-      <Header />
+      <Header accessGranted={false} />
 
       <div
         className="p-4 w-full flex flex-row justify-center"

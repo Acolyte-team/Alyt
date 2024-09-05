@@ -5,7 +5,7 @@ import Social from "./components/Social";
 export default function Home() {
   return (
     <div className="w-full">
-      <Header />
+      <Header accessGranted={false} />
 
       <div
         className="p-4 w-full flex flex-row justify-center"
